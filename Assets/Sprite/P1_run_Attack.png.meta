@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a5919d3c5dd3c894a8f4776a37c72356
+guid: 7c6ebae689a1e514b9bae4c1c8bbeb2f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player 1_0
+      name: P1_run_Attack_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 3
         y: 0
-        width: 19
-        height: 34
+        width: 25
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a81c7c6b5665a94c8e88d1fc4124dcb
-      internalID: 48624981
+      spriteID: ca89ddb8eaff0be4db8183caeb146315
+      internalID: -750779563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player 1_1
+      name: P1_run_Attack_1
       rect:
         serializedVersion: 2
-        x: 51
+        x: 56
         y: 0
         width: 20
-        height: 34
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d27a5bf9dc505b4ba22e90a3b81984f
-      internalID: -316023266
+      spriteID: 8fc0376fdef560141aaf9fb593234f5c
+      internalID: 695419561
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player 1_2
+      name: P1_run_Attack_2
       rect:
         serializedVersion: 2
         x: 99
         y: 0
-        width: 20
-        height: 34
+        width: 36
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 157a6f34aaa32024190adfc940427a25
-      internalID: -311447274
+      spriteID: cdd3d9ef9ad563b48b72c69dd3769467
+      internalID: 1391377176
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player 1_3
+      name: P1_run_Attack_3
       rect:
         serializedVersion: 2
-        x: 148
+        x: 146
         y: 0
-        width: 19
-        height: 34
+        width: 35
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,8 +200,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb0511bdf31e56140a4dd24f867fd5fa
-      internalID: -1815377847
+      spriteID: c570ad41ffd596943bc654966b3e4dfb
+      internalID: 1003179394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P1_run_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250cdb9b3339306459b02c60c378bd5d
+      internalID: 1988777516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P1_run_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 0
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2afed6f67a7005a45aefbe6446c8d261
+      internalID: -861081784
       vertices: []
       indices: 
       edges: []
@@ -217,10 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Player 1_0: 48624981
-      Player 1_1: -316023266
-      Player 1_2: -311447274
-      Player 1_3: -1815377847
+      P1_run_Attack_0: -750779563
+      P1_run_Attack_1: 695419561
+      P1_run_Attack_2: 1391377176
+      P1_run_Attack_3: 1003179394
+      P1_run_Attack_4: 1988777516
+      P1_run_Attack_5: -861081784
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
