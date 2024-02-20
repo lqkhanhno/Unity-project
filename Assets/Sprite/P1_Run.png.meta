@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 02ba718a0ab0eb44aaf7bd2ddabb2793
+guid: b6de916d21cb4ea4dbb1d0ef8c3ce04f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player 2_0
+      name: P1_Run_0
       rect:
         serializedVersion: 2
         x: 3
         y: 0
-        width: 19
-        height: 35
+        width: 25
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,24 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb2b2364adfdb5f429759a9f7acb02ec
-      internalID: -1781880516
+      spriteID: fb2236bd223c13849b3b1ef249796765
+      internalID: 392319488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player 2_1
+      name: P1_Run_1
       rect:
         serializedVersion: 2
-<<<<<<< Updated upstream
-        x: 48
-=======
-        x: 51
->>>>>>> Stashed changes
+        x: 56
         y: 0
-        width: 19
-        height: 35
+        width: 18
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8890ccfb14b7624897cc3eca8337567
-      internalID: 1160401120
+      spriteID: 6784b60bc37d2a94380bb0794c0486d0
+      internalID: 85174209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player 2_2
+      name: P1_Run_2
       rect:
         serializedVersion: 2
-        x: 98
+        x: 99
         y: 0
-        width: 20
-        height: 35
+        width: 29
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,24 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab9d1a22da71e894aa2992f674d46197
-      internalID: -832293406
+      spriteID: 1f8b7263b6a733b4394e6c1518e737c2
+      internalID: -26230808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player 2_3
+      name: P1_Run_3
       rect:
         serializedVersion: 2
-<<<<<<< Updated upstream
-        x: 144
-=======
         x: 146
->>>>>>> Stashed changes
         y: 0
-        width: 20
-        height: 35
+        width: 33
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,8 +200,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36b6f40b2613d1342a3a21e8373bb281
-      internalID: -1604286124
+      spriteID: 41905699dfc3c634ca35cb2cb34c8889
+      internalID: 1395367246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P1_Run_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39a065192c8e4d4790bb69e799789ab
+      internalID: -1948594388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P1_Run_5
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 0
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5c38273e4029a49abcf7345db1004c
+      internalID: -98856151
       vertices: []
       indices: 
       edges: []
@@ -225,10 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Player 2_0: -1781880516
-      Player 2_1: 1160401120
-      Player 2_2: -832293406
-      Player 2_3: -1604286124
+      P1_Run_0: 392319488
+      P1_Run_1: 85174209
+      P1_Run_2: -26230808
+      P1_Run_3: 1395367246
+      P1_Run_4: -1948594388
+      P1_Run_5: -98856151
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

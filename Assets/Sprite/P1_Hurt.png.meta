@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 02ba718a0ab0eb44aaf7bd2ddabb2793
+guid: 38dc9f177383f9d4d99e57dcbf921d2a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player 2_0
+      name: P1_Hurt_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 4
         y: 0
         width: 19
-        height: 35
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,24 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb2b2364adfdb5f429759a9f7acb02ec
-      internalID: -1781880516
+      spriteID: 79cf077eea0519e4d953469aefb5cbb0
+      internalID: -2071866926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player 2_1
+      name: P1_Hurt_1
       rect:
         serializedVersion: 2
-<<<<<<< Updated upstream
-        x: 48
-=======
-        x: 51
->>>>>>> Stashed changes
+        x: 49
         y: 0
-        width: 19
-        height: 35
+        width: 22
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,54 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8890ccfb14b7624897cc3eca8337567
-      internalID: 1160401120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player 2_2
-      rect:
-        serializedVersion: 2
-        x: 98
-        y: 0
-        width: 20
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab9d1a22da71e894aa2992f674d46197
-      internalID: -832293406
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player 2_3
-      rect:
-        serializedVersion: 2
-<<<<<<< Updated upstream
-        x: 144
-=======
-        x: 146
->>>>>>> Stashed changes
-        y: 0
-        width: 20
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36b6f40b2613d1342a3a21e8373bb281
-      internalID: -1604286124
+      spriteID: 3e5295929609abd41910a2e055fdd723
+      internalID: 1459636110
       vertices: []
       indices: 
       edges: []
@@ -225,10 +175,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Player 2_0: -1781880516
-      Player 2_1: 1160401120
-      Player 2_2: -832293406
-      Player 2_3: -1604286124
+      P1_Hurt_0: -2071866926
+      P1_Hurt_1: 1459636110
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
