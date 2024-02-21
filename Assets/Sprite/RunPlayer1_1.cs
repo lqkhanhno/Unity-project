@@ -9,11 +9,12 @@ public class RunPlayer1_1 : MonoBehaviour
     public int jumpower;
     private Animator anmi;
     private bool grounded;
+    private bool canDoubleJump;
 
     // Start is called before the first frame update
     void Start()
     {
-        speed = 10f;
+        speed = 7f;
         jumpower = 6;
         rgb = GetComponent<Rigidbody2D>();
         anmi = GetComponent<Animator>();
@@ -42,10 +43,10 @@ public class RunPlayer1_1 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) && grounded)
         {
             Jump();
-            if (Input.GetKeyDown(KeyCode.W) && grounded)
-            {
-                DoubleJump();
-            }
+        }
+        else if (Input.GetKeyDown(KeyCode.W) && canDoubleJump)
+        {
+            DoubleJump();
         }
         anmi.SetBool("Grounded", grounded);
     }
@@ -53,12 +54,21 @@ public class RunPlayer1_1 : MonoBehaviour
     {
         rgb.velocity = new Vector3(rgb.velocity.x, speed);
         anmi.SetTrigger("Jump");
+        if (grounded)
+        {
+            canDoubleJump = true; // Khi nh?y t? m?t ??t, cho phép double jump
+        }
+        else
+        {
+            canDoubleJump = false; // N?u không ? tr?ng thái m?t ??t, không th? double jump
+        }
         grounded = false;
     }
     private void DoubleJump()
     {
         rgb.velocity = new Vector3(rgb.velocity.x, speed);
-        anmi.SetTrigger("Jump");
+        anmi.SetTrigger("DoubleJump");
+        canDoubleJump = false;
         grounded = false;
     }
     private void OnCollisionEnter2D(Collision2D collision)

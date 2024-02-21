@@ -7,13 +7,17 @@ public class RunPlayer2 : MonoBehaviour
     public float speed;
     private Rigidbody2D rgb;
     public int jumpower;
+    private Animator anmi;
+    private bool grounded;
+    private bool canDoubleJump;
 
     // Start is called before the first frame update
     void Start()
     {
-        speed = 5f;
+        speed = 7f;
         jumpower = 6;
         rgb = GetComponent<Rigidbody2D>();
+        anmi = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -23,15 +27,55 @@ public class RunPlayer2 : MonoBehaviour
         {
             transform.Translate(Vector3.right * speed * Time.deltaTime);
             transform.localScale = new Vector2(-1, 1);
+            anmi.SetBool("Run", true);
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(Vector3.left * speed * Time.deltaTime);
             transform.localScale = new Vector2(1, 1);
+            anmi.SetBool("Run", true);
         }
-        else if (Input.GetKeyDown(KeyCode.UpArrow))
+        else
         {
-            rgb.AddForce(Vector2.up * jumpower, ForceMode2D.Impulse);
+            anmi.SetBool("Run", false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)
+        {
+            Jump();
+        }
+        else if (Input.GetKeyDown(KeyCode.UpArrow) && canDoubleJump)
+        {
+            DoubleJump();
+        }
+        anmi.SetBool("Grounded", grounded);
+    }
+    private void Jump()
+    {
+        rgb.velocity = new Vector3(rgb.velocity.x, speed);
+        anmi.SetTrigger("Jump");
+        if (grounded)
+        {
+            canDoubleJump = true; // Khi nh?y t? m?t ??t, cho phép double jump
+        }
+        else
+        {
+            canDoubleJump = false; // N?u không ? tr?ng thái m?t ??t, không th? double jump
+        }
+        grounded = false;
+    }
+    private void DoubleJump()
+    {
+        rgb.velocity = new Vector3(rgb.velocity.x, speed);
+        anmi.SetTrigger("DoubleJump");
+        canDoubleJump = false;
+        grounded = false;
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Titlemap")
+        {
+            grounded = true;
         }
     }
 }
