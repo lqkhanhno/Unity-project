@@ -10,6 +10,9 @@ public class RunPlayer2 : MonoBehaviour
     private Animator anmi;
     private bool grounded;
     private bool canDoubleJump;
+    public Transform attackPoint;
+    public float attackRange = 0.5f;
+    public LayerMask enemyLayers;
 
     // Start is called before the first frame update
     void Start()
@@ -28,16 +31,29 @@ public class RunPlayer2 : MonoBehaviour
             transform.Translate(Vector3.right * speed * Time.deltaTime);
             transform.localScale = new Vector2(-1, 1);
             anmi.SetBool("Run", true);
+            if (Input.GetKey(KeyCode.Keypad1))
+            {
+                RunAttack();
+            }
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(Vector3.left * speed * Time.deltaTime);
             transform.localScale = new Vector2(1, 1);
             anmi.SetBool("Run", true);
+            if (Input.GetKey(KeyCode.Keypad1))
+            {
+                RunAttack();
+            }
         }
         else
         {
             anmi.SetBool("Run", false);
+        }
+
+        if (Input.GetKey(KeyCode.Keypad1))
+        {
+            Attack();
         }
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)
@@ -50,17 +66,39 @@ public class RunPlayer2 : MonoBehaviour
         }
         anmi.SetBool("Grounded", grounded);
     }
+    private void Attack()
+    {
+        anmi.SetTrigger("Attack");
+        Vector2 pointA = attackPoint.position;
+        Vector2 pointB = pointA + new Vector2(attackRange, 0f);
+        Collider2D[] hitEnemies = Physics2D.OverlapAreaAll(pointA, pointB, enemyLayers);
+        foreach (Collider2D enemy in hitEnemies)
+        {
+        }
+    }
+    public void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null)
+        {
+            return;
+        }
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
+    private void RunAttack()
+    {
+        anmi.SetTrigger("RunAttack");
+    }
     private void Jump()
     {
         rgb.velocity = new Vector3(rgb.velocity.x, speed);
         anmi.SetTrigger("Jump");
         if (grounded)
         {
-            canDoubleJump = true; // Khi nh?y t? m?t ??t, cho phép double jump
+            canDoubleJump = true;
         }
         else
         {
-            canDoubleJump = false; // N?u không ? tr?ng thái m?t ??t, không th? double jump
+            canDoubleJump = false;
         }
         grounded = false;
     }
